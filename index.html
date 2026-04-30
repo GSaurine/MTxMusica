@@ -14,38 +14,51 @@
 <body>
     <div class="background-overlay"></div>
     
+    <!-- Accessibility Menu -->
+    <div class="accessibility-menu" role="region" aria-label="Menu de Acessibilidade">
+        <button class="acc-btn" onclick="toggleContrast()" title="Alternar Alto Contraste" aria-label="Alternar Alto Contraste">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button class="acc-btn" onclick="changeFontSize('increase')" title="Aumentar Fonte" aria-label="Aumentar Fonte">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button class="acc-btn" onclick="changeFontSize('decrease')" title="Diminuir Fonte" aria-label="Diminuir Fonte">
+            <i class="fas fa-minus"></i>
+        </button>
+    </div>
+
     <main class="container">
         <header class="header">
-            <img src="imagens/logo/logo.jpg" alt="Logo MTX" class="logo-img">
+            <img src="imagens/logo/logo.jpg" alt="Logotipo da MTX Música Sertaneja - Retrato de um chapéu e violão estilizados" class="logo-img">
             <h1 class="logo"><span>MTx</span></h1>
             <p class="tagline"><b>O melhor da música sertaneja em um só lugar.</b></p>
         </header>
 
-        <section class="spotify-embed">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5iSypS6a5pNCXe0ODkoCdI?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <section class="spotify-embed" aria-label="Player do Spotify">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5iSypS6a5pNCXe0ODkoCdI?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify Music Player"></iframe>
         </section>
 
         <section class="releases-section">
             <h3 class="section-title">Lançamentos</h3>
             <div class="releases-grid">
                 <div class="release-item">
-                    <img src="imagens/musicas/musicas_lançadas/agora_chora_voce.jpg" alt="Agora Chora Você">
+                    <img src="imagens/musicas/musicas_lançadas/agora_chora_voce.jpg" alt="Capa do single Agora Chora Você">
                     <span>Agora Chora Você</span>
                 </div>
                 <div class="release-item">
-                    <img src="imagens/musicas/musicas_lançadas/amar_sozinho.jpg" alt="Amar Sozinho">
+                    <img src="imagens/musicas/musicas_lançadas/amar_sozinho.jpg" alt="Capa do single Amar Sozinho">
                     <span>Amar Sozinho</span>
                 </div>
                 <div class="release-item">
-                    <img src="imagens/musicas/musicas_lançadas/coracao_nao_tem_botao.jpg" alt="Coração Não Tem Botão">
+                    <img src="imagens/musicas/musicas_lançadas/coracao_nao_tem_botao.jpg" alt="Capa do single Coração Não Tem Botão">
                     <span>Coração Não Tem Botão</span>
                 </div>
                 <div class="release-item">
-                    <img src="imagens/musicas/musicas_lançadas/coracao_sem_dono.jpg" alt="Coração Sem Dono">
+                    <img src="imagens/musicas/musicas_lançadas/coracao_sem_dono.jpg" alt="Capa do single Coração Sem Dono">
                     <span>Coração Sem Dono</span>
                 </div>
                 <div class="release-item">
-                    <img src="imagens/musicas/musicas_lançadas/nem_fica_nem_vai.jpg" alt="Nem Fica Nem Vai">
+                    <img src="imagens/musicas/musicas_lançadas/nem_fica_nem_vai.jpg" alt="Capa do single Nem Fica Nem Vai">
                     <span>Nem Fica Nem Vai</span>
                 </div>
             </div>
@@ -55,44 +68,44 @@
             <h3 class="section-title">Próximos Lançamentos</h3>
             <div class="releases-grid">
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/noite_clara.jpg" alt="Noite Clara">
+                    <img src="imagens/musicas/musicas_futuras/noite_clara.jpg" alt="Capa do próximo lançamento Noite Clara">
                     <span>Noite Clara de Emoção</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/erro_seu.jpg" alt="Erro Seu">
+                    <img src="imagens/musicas/musicas_futuras/erro_seu.jpg" alt="Capa do próximo lançamento Erro Seu">
                     <span>Erro Seu</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/eu vou.jpg" alt="Eu Vou">
+                    <img src="imagens/musicas/musicas_futuras/eu vou.jpg" alt="Capa do próximo lançamento Eu Vou">
                     <span>Eu Vou</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/final_de_semana.jpg" alt="Final de Semana">
+                    <img src="imagens/musicas/musicas_futuras/final_de_semana.jpg" alt="Capa do próximo lançamento Final de Semana">
                     <span>Final de Semana</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/livramento.jpg" alt="Livramento">
+                    <img src="imagens/musicas/musicas_futuras/livramento.jpg" alt="Capa do próximo lançamento Livramento">
                     <span>Livramento</span>
                 </div>
                 
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/outros_planos.jpg" alt="Outros Planos">
+                    <img src="imagens/musicas/musicas_futuras/outros_planos.jpg" alt="Capa do próximo lançamento Outros Planos">
                     <span>Outros Planos</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/patricinha_do_agro.jpg" alt="Patricinha do Agro">
+                    <img src="imagens/musicas/musicas_futuras/patricinha_do_agro.jpg" alt="Capa do próximo lançamento Patricinha do Agro">
                     <span>Patricinha do Agro</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/promocao_de_sentimento.jpg" alt="Promoção de Sentimento">
+                    <img src="imagens/musicas/musicas_futuras/promocao_de_sentimento.jpg" alt="Capa do próximo lançamento Promoção de Sentimento">
                     <span>Promoção de Sentimento</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/sinal_da_saudade.jpg" alt="Sinal da Saudade">
+                    <img src="imagens/musicas/musicas_futuras/sinal_da_saudade.jpg" alt="Capa do próximo lançamento Sinal da Saudade">
                     <span>Sinal da Saudade</span>
                 </div>
                 <div class="release-item future">
-                    <img src="imagens/musicas/musicas_futuras/ultima_vez.jpg" alt="Última Vez">
+                    <img src="imagens/musicas/musicas_futuras/ultima_vez.jpg" alt="Capa do próximo lançamento Última Vez">
                     <span>Última Vez</span>
                 </div>
             </div>
@@ -102,9 +115,9 @@
             <h3 class="section-title">Nossa Loja</h3>
             <div class="single-shop-card">
                 <div class="product-gallery">
-                    <img src="imagens/produtos/camisa1.jpg" alt="Camisa MTX 1">
-                    <img src="imagens/produtos/camisa2.jpg" alt="Camisa MTX 2">
-                    <img src="imagens/produtos/camisa3.jpg" alt="Camisa MTX 3">
+                    <img src="imagens/produtos/camisa1.jpg" alt="Camisa MTX Branca">
+                    <img src="imagens/produtos/camisa2.jpg" alt="Camisa MTX Preta">
+                    <img src="imagens/produtos/camisa3.jpg" alt="Camisa MTX Cinza">
                 </div>
                 <div class="shop-info">
                     <span class="product-name">Camisa Oficial MTX</span>
@@ -116,29 +129,29 @@
         </section>
 
         <nav class="links">
-            <a href="https://open.spotify.com/intl-pt/artist/5iSypS6a5pNCXe0ODkoCdI" target="_blank" class="link-card spotify">
+            <a href="https://open.spotify.com/intl-pt/artist/5iSypS6a5pNCXe0ODkoCdI" target="_blank" class="link-card spotify" aria-label="Ouça MTX no Spotify">
                 <div class="icon"><i class="fab fa-spotify"></i></div>
                 <span>Ouça no Spotify</span>
             </a>
-            <a href="https://youtube.com/playlist?list=PLunBIabA11IxIqLHLyvsAFrJfOKe6wHFl&si=wr09ezA1ICECQTR_" target="_blank" class="link-card youtube">
+            <a href="https://youtube.com/playlist?list=PLunBIabA11IxIqLHLyvsAFrJfOKe6wHFl&si=wr09ezA1ICECQTR_" target="_blank" class="link-card youtube" aria-label="Assista aos vídeos da MTX no YouTube">
                 <div class="icon"><i class="fab fa-youtube"></i></div>
                 <span>Vídeos no YouTube</span>
             </a>
-            <a href="https://tiktok.com/@mtxmusicasertaneja" target="_blank" class="link-card tiktok">
+            <a href="https://tiktok.com/@mtxmusicasertaneja" target="_blank" class="link-card tiktok" aria-label="Siga a MTX no TikTok">
                 <div class="icon"><i class="fab fa-tiktok"></i></div>
                 <span>Trends no TikTok</span>
             </a>
             
-            <a href="https://www.facebook.com/share/1XRceccXnL/?mibextid=wwXIfr" target="_blank" class="link-card facebook">
+            <a href="https://www.facebook.com/share/1XRceccXnL/?mibextid=wwXIfr" target="_blank" class="link-card facebook" aria-label="Siga a MTX no Facebook">
                 <div class="icon"><i class="fab fa-facebook"></i></div>
                 <span>Novidades no Facebook</span>
             </a>
-            <a href="https://www.instagram.com/mtx_musicasertaneja?igsh=MTNtbTN6Nm9taWs2&utm_source=qr" target="_blank" class="link-card instagram">
+            <a href="https://www.instagram.com/mtx_musicasertaneja?igsh=MTNtbTN6Nm9taWs2&utm_source=qr" target="_blank" class="link-card instagram" aria-label="Siga a MTX no Instagram">
                 <div class="icon"><i class="fab fa-instagram"></i></div>
                 <span>Bastidores no Instagram</span>
             </a>
            
-            <a href="https://wa.me/+351 939 455 137" target="_blank" class="link-card whatsapp">
+            <a href="https://wa.me/+351939455137" target="_blank" class="link-card whatsapp" aria-label="Fale conosco via WhatsApp">
                 <div class="icon"><i class="fab fa-whatsapp"></i></div>
                 <span>Contato</span>
             </a>
@@ -148,5 +161,37 @@
             <p>&copy; 2026 MTX Música Sertaneja</p>
         </footer>
     </main>
+
+    <script>
+        function toggleContrast() {
+            document.body.classList.toggle('high-contrast');
+            const isContrast = document.body.classList.contains('high-contrast');
+            localStorage.setItem('highContrast', isContrast);
+        }
+
+        function changeFontSize(action) {
+            const body = document.body;
+            if (action === 'increase') {
+                if (body.classList.contains('font-large')) {
+                    body.classList.remove('font-large');
+                    body.classList.add('font-xlarge');
+                } else if (!body.classList.contains('font-xlarge')) {
+                    body.classList.add('font-large');
+                }
+            } else {
+                if (body.classList.contains('font-xlarge')) {
+                    body.classList.remove('font-xlarge');
+                    body.classList.add('font-large');
+                } else {
+                    body.classList.remove('font-large');
+                }
+            }
+        }
+
+        // Load preferences
+        if (localStorage.getItem('highContrast') === 'true') {
+            document.body.classList.add('high-contrast');
+        }
+    </script>
 </body>
 </html>
