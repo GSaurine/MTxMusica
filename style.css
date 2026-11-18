@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
@@ -235,6 +239,185 @@ body.high-contrast .logo-img {
     text-overflow: ellipsis;
 }
 
+/* Apresentação */
+.intro {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 12px;
+}
+
+.intro-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.pill-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-color);
+    color: var(--coffee);
+    border: 2px solid var(--accent-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 9px 18px;
+    border-radius: 999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pill-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pill-button.outline {
+    background: transparent;
+    color: var(--accent-color);
+}
+
+.pill-button.small {
+    font-size: 0.75rem;
+    padding: 7px 14px;
+}
+
+/* Lançamento em destaque */
+.featured {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 30px;
+}
+
+.featured-cover {
+    width: 120px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.featured-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.75;
+}
+
+.featured-title {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin: 2px 0 6px;
+}
+
+.featured-text {
+    font-size: 0.78rem;
+    opacity: 0.85;
+    margin-bottom: 10px;
+}
+
+.featured-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Vídeos */
+.videos-section {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: #000;
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Conheça o compositor */
+.composer-section {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.composer-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.composer-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.composer-name {
+    font-size: 1.2rem;
+}
+
+.composer-role {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.75;
+    margin-bottom: 12px;
+}
+
+.composer-bio {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.composer-bio + .composer-bio {
+    margin-top: 10px;
+}
+
+body.high-contrast .featured,
+body.high-contrast .composer-card {
+    background: #000;
+    border: 2px solid #ff0;
+}
+
+body.high-contrast .pill-button {
+    background: #ff0;
+    color: #000;
+    border-color: #ff0;
+}
+
+body.high-contrast .pill-button.outline {
+    background: #000;
+    color: #ff0;
+}
+
 /* Shop Section Styles */
 .shop-section {
     width: 100%;
@@ -385,5 +568,14 @@ body.high-contrast .logo-img {
 @media (max-width: 380px) {
     .logo {
         font-size: 2rem;
+    }
+
+    .featured {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .featured-actions {
+        justify-content: center;
     }
 }
