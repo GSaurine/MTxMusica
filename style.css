@@ -564,6 +564,28 @@ body.high-contrast .pill-button.outline {
     opacity: 0.5;
 }
 
+/* Celular: menu de acessibilidade numa linha no topo, rolando com a página,
+   para não ficar por cima do conteúdo */
+@media (max-width: 600px) {
+    .accessibility-menu {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .acc-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding-top: 66px;
+    }
+}
+
 /* Mobile adjustments */
 @media (max-width: 380px) {
     .logo {
