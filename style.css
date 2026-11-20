@@ -401,7 +401,36 @@ body.high-contrast .logo-img {
     margin-top: 10px;
 }
 
+/* Playlists */
+.playlists-section {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.playlist-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+.playlist-name {
+    font-size: 1rem;
+}
+
+.playlist-desc {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.playlist-card iframe {
+    display: block;
+}
+
 body.high-contrast .featured,
+body.high-contrast .playlist-card,
 body.high-contrast .composer-card {
     background: #000;
     border: 2px solid #ff0;
